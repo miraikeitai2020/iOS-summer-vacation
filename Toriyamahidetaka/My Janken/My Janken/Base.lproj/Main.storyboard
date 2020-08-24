@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Janken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RbJ-Po-ABi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="670"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-Gz-tNT">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bRk-qU-r29"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="ジャンケンする">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m77-RG-0oK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからジャンケンをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1M-Ic-7pP">
+                                <rect key="frame" x="85" y="722" width="244" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2z1-vQ-gX2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z1M-Ic-7pP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="5Ns-HF-TyA"/>
+                            <constraint firstItem="RbJ-Po-ABi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7iS-qI-gtk"/>
+                            <constraint firstItem="kAg-Gz-tNT" firstAttribute="top" secondItem="z1M-Ic-7pP" secondAttribute="bottom" id="Ci9-hC-BHK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kAg-Gz-tNT" secondAttribute="bottom" id="Ebm-FJ-J5X"/>
+                            <constraint firstItem="kAg-Gz-tNT" firstAttribute="top" relation="lessThanOrEqual" secondItem="z1M-Ic-7pP" secondAttribute="bottom" constant="106" id="FZP-Y1-Xj5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1M-Ic-7pP" secondAttribute="trailing" constant="85" id="NWR-da-2c7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1M-Ic-7pP" secondAttribute="trailing" id="SqB-qQ-Bvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RbJ-Po-ABi" secondAttribute="trailing" id="dIl-Oj-p5F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kAg-Gz-tNT" secondAttribute="trailing" id="fdv-SN-Tqn"/>
+                            <constraint firstItem="z1M-Ic-7pP" firstAttribute="top" secondItem="RbJ-Po-ABi" secondAttribute="bottom" id="mXY-lh-WLN"/>
+                            <constraint firstItem="RbJ-Po-ABi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nXZ-R7-oM5"/>
+                            <constraint firstItem="kAg-Gz-tNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wtX-6c-3tZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1M-Ic-7pP" secondAttribute="trailing" id="z0B-jm-L9d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="RbJ-Po-ABi" id="jc4-zM-veB"/>
+                        <outlet property="answerLable" destination="z1M-Ic-7pP" id="SgK-W2-J0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
