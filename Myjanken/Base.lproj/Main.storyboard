@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Myjanken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S1M-lg-ok1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="678"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-U8-gtt">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="w0c-GW-XYC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="じゃんけんをする！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uW-UA-eT2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからじゃんけんをします" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzn-ZT-VTy">
+                                <rect key="frame" x="0.0" y="722" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jfW-PV-TQq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pv7-U8-gtt" secondAttribute="bottom" id="0AZ-ZC-1tO"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0xQ-NX-FHu"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1J4-Ym-EDF"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1kV-GF-LJ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S1M-lg-ok1" secondAttribute="trailing" id="44X-eR-h0j"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="46j-ce-eng"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="top" secondItem="xzn-ZT-VTy" secondAttribute="bottom" id="7uU-z0-mxE"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BKL-Y3-iYd"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="top" secondItem="xzn-ZT-VTy" secondAttribute="bottom" constant="118" id="Clu-f0-mQD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xzn-ZT-VTy" secondAttribute="trailing" id="Dv4-GB-cNK"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H0d-rK-KCD"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="top" secondItem="S1M-lg-ok1" secondAttribute="bottom" id="IFg-wO-cOb"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KH8-aY-4Nl"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="top" secondItem="S1M-lg-ok1" secondAttribute="bottom" id="Ssr-rK-VoD"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eNt-1l-nmM"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="top" secondItem="S1M-lg-ok1" secondAttribute="bottom" constant="46" id="gSl-Cf-lOC"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hSK-Rd-zuP"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="top" secondItem="xzn-ZT-VTy" secondAttribute="bottom" id="n8A-ko-EVy"/>
+                            <constraint firstItem="xzn-ZT-VTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRS-6m-I29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pv7-U8-gtt" secondAttribute="trailing" id="p83-RT-8mR"/>
+                            <constraint firstItem="S1M-lg-ok1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNu-oS-AUe"/>
+                            <constraint firstItem="pv7-U8-gtt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8e-lD-fEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="S1M-lg-ok1" id="eAQ-oC-87d"/>
+                        <outlet property="answerLabel" destination="xzn-ZT-VTy" id="IMh-k7-go2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
