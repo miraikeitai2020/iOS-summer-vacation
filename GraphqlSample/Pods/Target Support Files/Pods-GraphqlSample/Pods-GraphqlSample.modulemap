@@ -1,0 +1,6 @@
+framework module Pods_GraphqlSample {
+  umbrella header "Pods-GraphqlSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

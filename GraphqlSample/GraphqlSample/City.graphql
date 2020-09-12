@@ -1,0 +1,7 @@
+query AllCity{
+  allCity{
+    name
+    longitude
+    latitude
+  }
+}
